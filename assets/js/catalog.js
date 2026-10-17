@@ -16,6 +16,30 @@ window.SITE = {
 
 window.GRADES = [
   {
+    id: "grade4",
+    name: "الصف الرابع",
+    num: "4",
+    desc: "نماذج امتحانات منتصف الفصل الأول في اللغة الإنجليزية.",
+    collections: [
+      {
+        id: "grade4-english-midterm",
+        subject: "اللغة الإنجليزية",
+        title: "امتحان منتصف الفصل الأول",
+        term: "الفصل الدراسي الأول 2026 / 2027",
+        units: "الوحدتان 1 و2",
+        dir: "files/grade4/english/midterm/",
+        zip: { file: "Grade4-English-Midterm-All-PDF.zip", size: "3.7 MB" },
+        models: [
+          { n: 1, file: "Grade4-English-Midterm-Model-1.pdf", cover: "grade4-english-model-1", size: "810 KB", pages: 5, tag: "30 علامة · من الكتاب" },
+          { n: 2, file: "Grade4-English-Midterm-Model-2.pdf", cover: "grade4-english-model-2", size: "735 KB", pages: 5, tag: "30 علامة · من الكتاب" },
+          { n: 3, file: "Grade4-English-Midterm-Model-3.pdf", cover: "grade4-english-model-3", size: "835 KB", pages: 5, tag: "30 علامة" },
+          { n: 4, file: "Grade4-English-Midterm-Model-4.pdf", cover: "grade4-english-model-4", size: "740 KB", pages: 5, tag: "30 علامة" },
+          { n: 5, file: "Grade4-English-Midterm-Model-5.pdf", cover: "grade4-english-model-5", size: "770 KB", pages: 5, tag: "30 علامة" }
+        ]
+      }
+    ]
+  },
+  {
     id: "grade5",
     name: "الصف الخامس",
     num: "5",
