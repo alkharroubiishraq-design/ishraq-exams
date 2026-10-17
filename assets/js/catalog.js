@@ -30,8 +30,8 @@ window.GRADES = [
         dir: "files/grade7/english/midterm/",
         zip: { file: "Grade7-English-Midterm-All-PDF.zip", size: "3.3 MB" },
         models: [
-          { n: 1, file: "Grade7-English-Midterm-Model-1.pdf", cover: "grade7-english-model-1", size: "675 KB", pages: 8, tag: "نموذج موسّع" },
-          { n: 2, file: "Grade7-English-Midterm-Model-2.pdf", cover: "grade7-english-model-2", size: "675 KB", pages: 8, tag: "نموذج موسّع" },
+          { n: 1, file: "Grade7-English-Midterm-Model-1.pdf", cover: "grade7-english-model-1", size: "675 KB", pages: 8, tag: "موسّع · 30 علامة" },
+          { n: 2, file: "Grade7-English-Midterm-Model-2.pdf", cover: "grade7-english-model-2", size: "675 KB", pages: 8, tag: "موسّع · 30 علامة" },
           { n: 3, file: "Grade7-English-Midterm-Model-3.pdf", cover: "grade7-english-model-3", size: "665 KB", pages: 5, tag: "30 علامة" },
           { n: 4, file: "Grade7-English-Midterm-Model-4.pdf", cover: "grade7-english-model-4", size: "670 KB", pages: 5, tag: "30 علامة" },
           { n: 5, file: "Grade7-English-Midterm-Model-5.pdf", cover: "grade7-english-model-5", size: "680 KB", pages: 5, tag: "30 علامة" }
@@ -54,8 +54,8 @@ window.GRADES = [
         dir: "files/grade8/english/midterm/",
         zip: { file: "Grade8-English-Midterm-All-PDF.zip", size: "3.3 MB" },
         models: [
-          { n: 1, file: "Grade8-English-Midterm-Model-1.pdf", cover: "grade8-english-model-1", size: "680 KB", pages: 8, tag: "نموذج موسّع" },
-          { n: 2, file: "Grade8-English-Midterm-Model-2.pdf", cover: "grade8-english-model-2", size: "675 KB", pages: 8, tag: "نموذج موسّع" },
+          { n: 1, file: "Grade8-English-Midterm-Model-1.pdf", cover: "grade8-english-model-1", size: "680 KB", pages: 8, tag: "موسّع · 30 علامة" },
+          { n: 2, file: "Grade8-English-Midterm-Model-2.pdf", cover: "grade8-english-model-2", size: "675 KB", pages: 8, tag: "موسّع · 30 علامة" },
           { n: 3, file: "Grade8-English-Midterm-Model-3.pdf", cover: "grade8-english-model-3", size: "670 KB", pages: 6, tag: "60 علامة" },
           { n: 4, file: "Grade8-English-Midterm-Model-4.pdf", cover: "grade8-english-model-4", size: "680 KB", pages: 6, tag: "60 علامة" },
           { n: 5, file: "Grade8-English-Midterm-Model-5.pdf", cover: "grade8-english-model-5", size: "685 KB", pages: 6, tag: "60 علامة" }
@@ -78,8 +78,8 @@ window.GRADES = [
         dir: "files/grade9/english/midterm/",
         zip: { file: "Grade9-English-Midterm-All-PDF.zip", size: "3.2 MB" },
         models: [
-          { n: 1, file: "Grade9-English-Midterm-Model-1.pdf", cover: "grade9-english-model-1", size: "670 KB", pages: 8, tag: "نموذج موسّع" },
-          { n: 2, file: "Grade9-English-Midterm-Model-2.pdf", cover: "grade9-english-model-2", size: "670 KB", pages: 8, tag: "نموذج موسّع" },
+          { n: 1, file: "Grade9-English-Midterm-Model-1.pdf", cover: "grade9-english-model-1", size: "670 KB", pages: 8, tag: "موسّع · 30 علامة" },
+          { n: 2, file: "Grade9-English-Midterm-Model-2.pdf", cover: "grade9-english-model-2", size: "670 KB", pages: 8, tag: "موسّع · 30 علامة" },
           { n: 3, file: "Grade9-English-Midterm-Model-3.pdf", cover: "grade9-english-model-3", size: "660 KB", pages: 6, tag: "60 علامة" },
           { n: 4, file: "Grade9-English-Midterm-Model-4.pdf", cover: "grade9-english-model-4", size: "660 KB", pages: 6, tag: "60 علامة" },
           { n: 5, file: "Grade9-English-Midterm-Model-5.pdf", cover: "grade9-english-model-5", size: "670 KB", pages: 6, tag: "60 علامة" }
@@ -102,8 +102,8 @@ window.GRADES = [
         dir: "files/grade10/english/midterm/",
         zip: { file: "Grade10-English-Midterm-All-PDF.zip", size: "2.6 MB" },
         models: [
-          { n: 1, file: "Grade10-English-Midterm-Model-1.pdf", cover: "grade10-english-model-1", size: "530 KB", pages: 8, tag: "نموذج موسّع" },
-          { n: 2, file: "Grade10-English-Midterm-Model-2.pdf", cover: "grade10-english-model-2", size: "530 KB", pages: 8, tag: "نموذج موسّع" },
+          { n: 1, file: "Grade10-English-Midterm-Model-1.pdf", cover: "grade10-english-model-1", size: "530 KB", pages: 8, tag: "موسّع · 30 علامة" },
+          { n: 2, file: "Grade10-English-Midterm-Model-2.pdf", cover: "grade10-english-model-2", size: "530 KB", pages: 8, tag: "موسّع · 30 علامة" },
           { n: 3, file: "Grade10-English-Midterm-Model-3.pdf", cover: "grade10-english-model-3", size: "525 KB", pages: 7, tag: "60 علامة" },
           { n: 4, file: "Grade10-English-Midterm-Model-4.pdf", cover: "grade10-english-model-4", size: "535 KB", pages: 6, tag: "60 علامة" },
           { n: 5, file: "Grade10-English-Midterm-Model-5.pdf", cover: "grade10-english-model-5", size: "540 KB", pages: 6, tag: "60 علامة" }
