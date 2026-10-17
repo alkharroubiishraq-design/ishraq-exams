@@ -1,7 +1,10 @@
 /*
-  قائمة النماذج المعروضة في الموقع.
-  لإضافة صف أو مادة جديدة: انسخ كتلة كاملة داخل COLLECTIONS وعدّل البيانات،
-  وضع ملفات PDF في المجلد المذكور في "dir" وصور الأغلفة في assets/img/covers/.
+  بيانات الموقع.
+  لإضافة صف جديد:
+    1) أضف كتلة جديدة داخل GRADES (انسخ كتلة الصف العاشر وعدّلها).
+    2) انسخ المجلد grade10 باسم الصف الجديد (مثل grade11) وغيّر data-grade في ملف index.html داخله.
+  لإضافة مادة أو امتحان لصف موجود: أضف كتلة داخل "collections" لذلك الصف.
+  ملفات PDF توضع في المجلد المذكور في "dir"، وصور الأغلفة في assets/img/covers/.
 */
 window.SITE = {
   teacher: "إشراق الخروبي",
@@ -11,22 +14,29 @@ window.SITE = {
   whatsapp: "962790146621"
 };
 
-window.COLLECTIONS = [
+window.GRADES = [
   {
-    id: "grade10-english-midterm",
-    grade: "الصف العاشر",
-    subject: "اللغة الإنجليزية",
-    title: "امتحان منتصف الفصل الأول",
-    term: "الفصل الدراسي الأول 2026 / 2027",
-    units: "الوحدات من 1 إلى 3، كتاب Jordan High Note",
-    dir: "files/grade10/english/midterm/",
-    zip: { file: "Grade10-English-Midterm-All-PDF.zip", size: "2.6 MB" },
-    models: [
-      { n: 1, file: "Grade10-English-Midterm-Model-1.pdf", cover: "grade10-english-model-1", size: "530 KB", pages: 8, tag: "نموذج موسّع" },
-      { n: 2, file: "Grade10-English-Midterm-Model-2.pdf", cover: "grade10-english-model-2", size: "530 KB", pages: 8, tag: "نموذج موسّع" },
-      { n: 3, file: "Grade10-English-Midterm-Model-3.pdf", cover: "grade10-english-model-3", size: "525 KB", pages: 7, tag: "60 علامة" },
-      { n: 4, file: "Grade10-English-Midterm-Model-4.pdf", cover: "grade10-english-model-4", size: "535 KB", pages: 6, tag: "60 علامة" },
-      { n: 5, file: "Grade10-English-Midterm-Model-5.pdf", cover: "grade10-english-model-5", size: "540 KB", pages: 6, tag: "60 علامة" }
+    id: "grade10",
+    name: "الصف العاشر",
+    num: "10",
+    desc: "نماذج امتحانات منتصف الفصل الأول في اللغة الإنجليزية.",
+    collections: [
+      {
+        id: "grade10-english-midterm",
+        subject: "اللغة الإنجليزية",
+        title: "امتحان منتصف الفصل الأول",
+        term: "الفصل الدراسي الأول 2026 / 2027",
+        units: "الوحدات من 1 إلى 3",
+        dir: "files/grade10/english/midterm/",
+        zip: { file: "Grade10-English-Midterm-All-PDF.zip", size: "2.6 MB" },
+        models: [
+          { n: 1, file: "Grade10-English-Midterm-Model-1.pdf", cover: "grade10-english-model-1", size: "530 KB", pages: 8, tag: "نموذج موسّع" },
+          { n: 2, file: "Grade10-English-Midterm-Model-2.pdf", cover: "grade10-english-model-2", size: "530 KB", pages: 8, tag: "نموذج موسّع" },
+          { n: 3, file: "Grade10-English-Midterm-Model-3.pdf", cover: "grade10-english-model-3", size: "525 KB", pages: 7, tag: "60 علامة" },
+          { n: 4, file: "Grade10-English-Midterm-Model-4.pdf", cover: "grade10-english-model-4", size: "535 KB", pages: 6, tag: "60 علامة" },
+          { n: 5, file: "Grade10-English-Midterm-Model-5.pdf", cover: "grade10-english-model-5", size: "540 KB", pages: 6, tag: "60 علامة" }
+        ]
+      }
     ]
   }
 ];
