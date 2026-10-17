@@ -16,6 +16,30 @@ window.SITE = {
 
 window.GRADES = [
   {
+    id: "grade6",
+    name: "الصف السادس",
+    num: "6",
+    desc: "نماذج امتحانات منتصف الفصل الأول في اللغة الإنجليزية.",
+    collections: [
+      {
+        id: "grade6-english-midterm",
+        subject: "اللغة الإنجليزية",
+        title: "امتحان منتصف الفصل الأول",
+        term: "الفصل الدراسي الأول 2026 / 2027",
+        units: "الوحدتان 1 و2",
+        dir: "files/grade6/english/midterm/",
+        zip: { file: "Grade6-English-Midterm-All-PDF.zip", size: "3.4 MB" },
+        models: [
+          { n: 1, file: "Grade6-English-Midterm-Model-1.pdf", cover: "grade6-english-model-1", size: "720 KB", pages: 5, tag: "30 علامة · من الكتاب" },
+          { n: 2, file: "Grade6-English-Midterm-Model-2.pdf", cover: "grade6-english-model-2", size: "700 KB", pages: 5, tag: "30 علامة · من الكتاب" },
+          { n: 3, file: "Grade6-English-Midterm-Model-3.pdf", cover: "grade6-english-model-3", size: "725 KB", pages: 5, tag: "30 علامة" },
+          { n: 4, file: "Grade6-English-Midterm-Model-4.pdf", cover: "grade6-english-model-4", size: "725 KB", pages: 5, tag: "30 علامة" },
+          { n: 5, file: "Grade6-English-Midterm-Model-5.pdf", cover: "grade6-english-model-5", size: "720 KB", pages: 5, tag: "30 علامة" }
+        ]
+      }
+    ]
+  },
+  {
     id: "grade7",
     name: "الصف السابع",
     num: "7",
