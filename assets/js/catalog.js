@@ -16,6 +16,30 @@ window.SITE = {
 
 window.GRADES = [
   {
+    id: "grade8",
+    name: "الصف الثامن",
+    num: "8",
+    desc: "نماذج امتحانات منتصف الفصل الأول في اللغة الإنجليزية.",
+    collections: [
+      {
+        id: "grade8-english-midterm",
+        subject: "اللغة الإنجليزية",
+        title: "امتحان منتصف الفصل الأول",
+        term: "الفصل الدراسي الأول 2026 / 2027",
+        units: "الوحدات من 1 إلى 3",
+        dir: "files/grade8/english/midterm/",
+        zip: { file: "Grade8-English-Midterm-All-PDF.zip", size: "3.3 MB" },
+        models: [
+          { n: 1, file: "Grade8-English-Midterm-Model-1.pdf", cover: "grade8-english-model-1", size: "680 KB", pages: 8, tag: "نموذج موسّع" },
+          { n: 2, file: "Grade8-English-Midterm-Model-2.pdf", cover: "grade8-english-model-2", size: "675 KB", pages: 8, tag: "نموذج موسّع" },
+          { n: 3, file: "Grade8-English-Midterm-Model-3.pdf", cover: "grade8-english-model-3", size: "670 KB", pages: 6, tag: "60 علامة" },
+          { n: 4, file: "Grade8-English-Midterm-Model-4.pdf", cover: "grade8-english-model-4", size: "680 KB", pages: 6, tag: "60 علامة" },
+          { n: 5, file: "Grade8-English-Midterm-Model-5.pdf", cover: "grade8-english-model-5", size: "685 KB", pages: 6, tag: "60 علامة" }
+        ]
+      }
+    ]
+  },
+  {
     id: "grade9",
     name: "الصف التاسع",
     num: "9",
