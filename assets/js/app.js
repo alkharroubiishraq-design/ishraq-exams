@@ -20,7 +20,7 @@
         "</a>" +
         '<div class="card-body">' +
           '<div class="card-title"><h3>النموذج ' + m.n + "</h3>" + (m.tag ? '<span class="tag">' + esc(m.tag) + "</span>" : "") + "</div>" +
-          '<p class="meta">' + m.pages + " صفحات · PDF · " + esc(m.size) + "</p>" +
+          '<p class="meta">' + m.pages + " صفحات مع الإجابات · PDF · " + esc(m.size) + "</p>" +
           '<div class="card-btns">' +
             '<a class="btn btn-pink" href="' + href + '" download>تحميل</a>' +
             '<a class="btn btn-soft" href="' + href + '" target="_blank" rel="noopener">معاينة</a>' +
