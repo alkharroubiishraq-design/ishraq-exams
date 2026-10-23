@@ -1,5 +1,6 @@
 /*
   بيانات الموقع.
+  المنهاجان: GRADES = منهاج الحكومة (صفحة government/)، EW_GRADES = منهاج English World (صفحة english-world/).
   لإضافة صف جديد:
     1) أضف كتلة جديدة داخل GRADES (انسخ كتلة الصف العاشر وعدّلها).
     2) انسخ المجلد grade10 باسم الصف الجديد (مثل grade11) وغيّر data-grade في ملف index.html داخله.
@@ -184,3 +185,53 @@ window.GRADES = [
     ]
   }
 ];
+
+/*
+  منهاج English World (Macmillan): نموذج شامل لكل وحدة.
+  الصف بدون نماذج بعد يظهر "قريبًا" (soon = عدد الوحدات المنتظرة).
+*/
+window.EW_GRADES = [
+  { id: "ew4", name: "الصف الرابع", num: "4", level: "English World 4", soon: 3 },
+  { id: "ew5", name: "الصف الخامس", num: "5", level: "English World 5", soon: 3 },
+  { id: "ew6", name: "الصف السادس", num: "6", level: "English World 6", soon: 3 },
+  { id: "ew7", name: "الصف السابع", num: "7", level: "English World 7", soon: 3 },
+  { id: "ew8", name: "الصف الثامن", num: "8", level: "English World 8", soon: 3 },
+  { id: "ew9", name: "الصف التاسع", num: "9", level: "English World 9", soon: 3 },
+  {
+    id: "ew10",
+    name: "الصف العاشر",
+    num: "10",
+    level: "English World 10",
+    collections: [
+      {
+        id: "ew10-units",
+        subject: "English World 10",
+        title: "نماذج الوحدات",
+        term: "نموذج شامل لكل وحدة: قراءة، معاني، إملاء، قواعد وكتابة",
+        units: "الوحدات من 1 إلى 3",
+        dir: "files/grade10/english-world/",
+        zip: { file: "Grade10-English-World-Units-1-3-PDF.zip", size: "1.9 MB" },
+        models: [
+          { n: 1, title: "الوحدة 1", file: "Grade10-English-World-Unit-1.pdf", cover: "grade10-english-world-unit-1", size: "650 KB", pages: 9, tag: "It's headline news!" },
+          { n: 2, title: "الوحدة 2", file: "Grade10-English-World-Unit-2.pdf", cover: "grade10-english-world-unit-2", size: "650 KB", pages: 9, tag: "I am writing to say ..." },
+          { n: 3, title: "الوحدة 3", file: "Grade10-English-World-Unit-3.pdf", cover: "grade10-english-world-unit-3", size: "655 KB", pages: 11, tag: "This house believes ..." }
+        ]
+      }
+    ]
+  }
+];
+
+window.CURRICULA = {
+  gov: {
+    name: "منهاج الحكومة",
+    desc: "نماذج امتحانات منتصف الفصل الأول لكل الصفوف، مبنية على الكتاب المقرر، وكل نموذج معه إجاباته في آخره.",
+    page: "government/",
+    grades: window.GRADES
+  },
+  ew: {
+    name: "منهاج English World",
+    desc: "نموذج شامل لكل وحدة من كتاب English World: فقرة قراءة وأسئلتها، معاني إنجليزي-إنجليزي، إملاء، قواعد وكتابة، مع الإجابات وورقة لكل كلمات الوحدة.",
+    page: "english-world/",
+    grades: window.EW_GRADES
+  }
+};
