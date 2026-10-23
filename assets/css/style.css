@@ -321,3 +321,37 @@ a.grade-card:focus-visible { outline: 3px solid var(--teal); outline-offset: 2px
   .eyebrow { font-size: .66rem; letter-spacing: .08em; }
   .nav a.nav-cta { display: none; }
 }
+
+/* curriculum pages */
+.filters.jump a {
+  border: 1.5px solid var(--line); background: #fff; color: var(--navy); font-weight: 700;
+  padding: 8px 16px; border-radius: 999px; text-decoration: none; font-size: .95rem;
+}
+.filters.jump a:hover { border-color: var(--pink); color: var(--pink); }
+.gb-title { display: flex; gap: 14px; align-items: center; }
+.grade-block .grade-num { width: 62px; height: 62px; font-size: 1.7rem; border-radius: 18px; }
+.col-sub { color: var(--navy); margin: 18px 0 10px; }
+.grade-block.is-soon { padding-top: 18px; padding-bottom: 18px; box-shadow: none; }
+.grade-block.is-soon .col-head { margin-bottom: 10px; }
+.soon-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.soon-row span {
+  border: 1.5px dashed var(--line); border-radius: 12px; padding: 6px 14px; color: var(--muted); font-weight: 700;
+}
+.soon-row b { background: var(--pink-soft); color: var(--pink); padding: 4px 14px; border-radius: 999px; }
+.filters.jump a.ready { background: var(--navy); border-color: var(--navy); color: #fff; }
+
+/* home: curriculum cards */
+.cur-card { align-items: flex-start; }
+.cur-card .grade-num { font-size: 1.6rem; font-family: "Poppins", "Tajawal", sans-serif; }
+.cur-grades { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.cur-grades span {
+  min-width: 34px; height: 34px; padding: 0 6px; border-radius: 10px; display: grid; place-items: center;
+  background: var(--navy); color: #fff; font-weight: 800; font-size: .95rem;
+}
+.cur-grades span.off { background: var(--line); color: var(--muted); }
+@media (max-width: 560px) {
+  .grade-block .grade-num { width: 50px; height: 50px; font-size: 1.35rem; border-radius: 14px; }
+  .gb-title { gap: 10px; }
+}
+.grades.curricula { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 760px) { .grades.curricula { grid-template-columns: 1fr; } }
