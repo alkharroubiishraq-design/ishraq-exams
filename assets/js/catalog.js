@@ -235,7 +235,28 @@ window.EW_GRADES = [
       }
     ]
   },
-  { id: "ew6", name: "الصف السادس", num: "6", level: "English World 6", soon: 3 },
+  {
+    id: "ew6",
+    name: "الصف السادس",
+    num: "6",
+    level: "English World 6",
+    collections: [
+      {
+        id: "ew6-units",
+        subject: "English World 6",
+        title: "نماذج الوحدات",
+        term: "نموذج شامل لكل وحدة من 30 علامة: قراءة، معاني، إملاء، قواعد وكتابة",
+        units: "الوحدات من 1 إلى 3",
+        dir: "files/grade6/english-world/",
+        zip: { file: "Grade6-English-World-Units-1-3-PDF.zip", size: "1.8 MB" },
+        models: [
+          { n: 1, title: "الوحدة 1", file: "Grade6-English-World-Unit-1.pdf", cover: "grade6-english-world-unit-1", size: "640 KB", pages: 9, tag: "Heat in the Earth" },
+          { n: 2, title: "الوحدة 2", file: "Grade6-English-World-Unit-2.pdf", cover: "grade6-english-world-unit-2", size: "635 KB", pages: 8, tag: "Energy from nature" },
+          { n: 3, title: "الوحدة 3", file: "Grade6-English-World-Unit-3.pdf", cover: "grade6-english-world-unit-3", size: "640 KB", pages: 9, tag: "What is going to happen next?" }
+        ]
+      }
+    ]
+  },
   {
     id: "ew7",
     name: "الصف السابع",
