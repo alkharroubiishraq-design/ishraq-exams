@@ -216,7 +216,28 @@ window.EW_GRADES = [
       }
     ]
   },
-  { id: "ew8", name: "الصف الثامن", num: "8", level: "English World 8", soon: 3 },
+  {
+    id: "ew8",
+    name: "الصف الثامن",
+    num: "8",
+    level: "English World 8",
+    collections: [
+      {
+        id: "ew8-units",
+        subject: "English World 8",
+        title: "نماذج الوحدات",
+        term: "نموذج شامل لكل وحدة من 60 علامة: قراءة، معاني، إملاء، قواعد وكتابة",
+        units: "الوحدات من 1 إلى 3",
+        dir: "files/grade8/english-world/",
+        zip: { file: "Grade8-English-World-Units-1-3-PDF.zip", size: "1.8 MB" },
+        models: [
+          { n: 1, title: "الوحدة 1", file: "Grade8-English-World-Unit-1.pdf", cover: "grade8-english-world-unit-1", size: "650 KB", pages: 10, tag: "A website project" },
+          { n: 2, title: "الوحدة 2", file: "Grade8-English-World-Unit-2.pdf", cover: "grade8-english-world-unit-2", size: "650 KB", pages: 10, tag: "We love New York" },
+          { n: 3, title: "الوحدة 3", file: "Grade8-English-World-Unit-3.pdf", cover: "grade8-english-world-unit-3", size: "655 KB", pages: 10, tag: "Different places" }
+        ]
+      }
+    ]
+  },
   {
     id: "ew9",
     name: "الصف التاسع",
