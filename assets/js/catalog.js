@@ -191,9 +191,72 @@ window.GRADES = [
   الصف بدون نماذج بعد يظهر "قريبًا" (soon = عدد الوحدات المنتظرة).
 */
 window.EW_GRADES = [
-  { id: "ew4", name: "الصف الرابع", num: "4", level: "English World 4", soon: 3 },
-  { id: "ew5", name: "الصف الخامس", num: "5", level: "English World 5", soon: 3 },
-  { id: "ew6", name: "الصف السادس", num: "6", level: "English World 6", soon: 3 },
+  {
+    id: "ew4",
+    name: "الصف الرابع",
+    num: "4",
+    level: "English World 4",
+    collections: [
+      {
+        id: "ew4-units",
+        subject: "English World 4",
+        title: "نماذج الوحدات",
+        term: "نموذج شامل لكل وحدة من 30 علامة: قراءة، معاني، إملاء، قواعد وكتابة",
+        units: "الوحدات من 1 إلى 3",
+        dir: "files/grade4/english-world/",
+        zip: { file: "Grade4-English-World-Units-1-3-PDF.zip", size: "1.8 MB" },
+        models: [
+          { n: 1, title: "الوحدة 1", file: "Grade4-English-World-Unit-1.pdf", cover: "grade4-english-world-unit-1", size: "635 KB", pages: 7, tag: "School clubs" },
+          { n: 2, title: "الوحدة 2", file: "Grade4-English-World-Unit-2.pdf", cover: "grade4-english-world-unit-2", size: "635 KB", pages: 7, tag: "In the theatre" },
+          { n: 3, title: "الوحدة 3", file: "Grade4-English-World-Unit-3.pdf", cover: "grade4-english-world-unit-3", size: "635 KB", pages: 7, tag: "Water birds" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "ew5",
+    name: "الصف الخامس",
+    num: "5",
+    level: "English World 5",
+    collections: [
+      {
+        id: "ew5-units",
+        subject: "English World 5",
+        title: "نماذج الوحدات",
+        term: "نموذج شامل لكل وحدة من 30 علامة: قراءة، معاني، إملاء، قواعد وكتابة",
+        units: "الوحدات من 1 إلى 3",
+        dir: "files/grade5/english-world/",
+        zip: { file: "Grade5-English-World-Units-1-3-PDF.zip", size: "1.8 MB" },
+        models: [
+          { n: 1, title: "الوحدة 1", file: "Grade5-English-World-Unit-1.pdf", cover: "grade5-english-world-unit-1", size: "635 KB", pages: 7, tag: "A journey to adventure" },
+          { n: 2, title: "الوحدة 2", file: "Grade5-English-World-Unit-2.pdf", cover: "grade5-english-world-unit-2", size: "635 KB", pages: 7, tag: "In the mountains" },
+          { n: 3, title: "الوحدة 3", file: "Grade5-English-World-Unit-3.pdf", cover: "grade5-english-world-unit-3", size: "640 KB", pages: 8, tag: "Tunnels and bridges" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "ew6",
+    name: "الصف السادس",
+    num: "6",
+    level: "English World 6",
+    collections: [
+      {
+        id: "ew6-units",
+        subject: "English World 6",
+        title: "نماذج الوحدات",
+        term: "نموذج شامل لكل وحدة من 30 علامة: قراءة، معاني، إملاء، قواعد وكتابة",
+        units: "الوحدات من 1 إلى 3",
+        dir: "files/grade6/english-world/",
+        zip: { file: "Grade6-English-World-Units-1-3-PDF.zip", size: "1.8 MB" },
+        models: [
+          { n: 1, title: "الوحدة 1", file: "Grade6-English-World-Unit-1.pdf", cover: "grade6-english-world-unit-1", size: "640 KB", pages: 9, tag: "Heat in the Earth" },
+          { n: 2, title: "الوحدة 2", file: "Grade6-English-World-Unit-2.pdf", cover: "grade6-english-world-unit-2", size: "635 KB", pages: 8, tag: "Energy from nature" },
+          { n: 3, title: "الوحدة 3", file: "Grade6-English-World-Unit-3.pdf", cover: "grade6-english-world-unit-3", size: "640 KB", pages: 9, tag: "What is going to happen next?" }
+        ]
+      }
+    ]
+  },
   {
     id: "ew7",
     name: "الصف السابع",
@@ -204,20 +267,62 @@ window.EW_GRADES = [
         id: "ew7-units",
         subject: "English World 7",
         title: "نماذج الوحدات",
-        term: "نموذج شامل لكل وحدة: قراءة، معاني، إملاء، قواعد وكتابة",
+        term: "نموذج شامل لكل وحدة من 30 علامة: قراءة، معاني، إملاء، قواعد وكتابة",
         units: "الوحدات من 1 إلى 3",
         dir: "files/grade7/english-world/",
         zip: { file: "Grade7-English-World-Units-1-3-PDF.zip", size: "1.9 MB" },
         models: [
-          { n: 1, title: "الوحدة 1", file: "Grade7-English-World-Unit-1.pdf", cover: "grade7-english-world-unit-1", size: "650 KB", pages: 10, tag: "The portrait project" },
-          { n: 2, title: "الوحدة 2", file: "Grade7-English-World-Unit-2.pdf", cover: "grade7-english-world-unit-2", size: "650 KB", pages: 10, tag: "The man at the fountain" },
-          { n: 3, title: "الوحدة 3", file: "Grade7-English-World-Unit-3.pdf", cover: "grade7-english-world-unit-3", size: "655 KB", pages: 10, tag: "Endangered animals" }
+          { n: 1, title: "الوحدة 1", file: "Grade7-English-World-Unit-1.pdf", cover: "grade7-english-world-unit-1", size: "650 KB", pages: 9, tag: "The portrait project" },
+          { n: 2, title: "الوحدة 2", file: "Grade7-English-World-Unit-2.pdf", cover: "grade7-english-world-unit-2", size: "650 KB", pages: 9, tag: "The man at the fountain" },
+          { n: 3, title: "الوحدة 3", file: "Grade7-English-World-Unit-3.pdf", cover: "grade7-english-world-unit-3", size: "655 KB", pages: 9, tag: "Endangered animals" }
         ]
       }
     ]
   },
-  { id: "ew8", name: "الصف الثامن", num: "8", level: "English World 8", soon: 3 },
-  { id: "ew9", name: "الصف التاسع", num: "9", level: "English World 9", soon: 3 },
+  {
+    id: "ew8",
+    name: "الصف الثامن",
+    num: "8",
+    level: "English World 8",
+    collections: [
+      {
+        id: "ew8-units",
+        subject: "English World 8",
+        title: "نماذج الوحدات",
+        term: "نموذج شامل لكل وحدة من 60 علامة: قراءة، معاني، إملاء، قواعد وكتابة",
+        units: "الوحدات من 1 إلى 3",
+        dir: "files/grade8/english-world/",
+        zip: { file: "Grade8-English-World-Units-1-3-PDF.zip", size: "1.8 MB" },
+        models: [
+          { n: 1, title: "الوحدة 1", file: "Grade8-English-World-Unit-1.pdf", cover: "grade8-english-world-unit-1", size: "650 KB", pages: 10, tag: "A website project" },
+          { n: 2, title: "الوحدة 2", file: "Grade8-English-World-Unit-2.pdf", cover: "grade8-english-world-unit-2", size: "650 KB", pages: 10, tag: "We love New York" },
+          { n: 3, title: "الوحدة 3", file: "Grade8-English-World-Unit-3.pdf", cover: "grade8-english-world-unit-3", size: "655 KB", pages: 10, tag: "Different places" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "ew9",
+    name: "الصف التاسع",
+    num: "9",
+    level: "English World 9",
+    collections: [
+      {
+        id: "ew9-units",
+        subject: "English World 9",
+        title: "نماذج الوحدات",
+        term: "نموذج شامل لكل وحدة من 60 علامة: قراءة، معاني، إملاء، قواعد وكتابة",
+        units: "الوحدات من 1 إلى 3",
+        dir: "files/grade9/english-world/",
+        zip: { file: "Grade9-English-World-Units-1-3-PDF.zip", size: "1.9 MB" },
+        models: [
+          { n: 1, title: "الوحدة 1", file: "Grade9-English-World-Unit-1.pdf", cover: "grade9-english-world-unit-1", size: "655 KB", pages: 10, tag: "An international school" },
+          { n: 2, title: "الوحدة 2", file: "Grade9-English-World-Unit-2.pdf", cover: "grade9-english-world-unit-2", size: "660 KB", pages: 11, tag: "Music" },
+          { n: 3, title: "الوحدة 3", file: "Grade9-English-World-Unit-3.pdf", cover: "grade9-english-world-unit-3", size: "655 KB", pages: 10, tag: "It's a mystery ..." }
+        ]
+      }
+    ]
+  },
   {
     id: "ew10",
     name: "الصف العاشر",
