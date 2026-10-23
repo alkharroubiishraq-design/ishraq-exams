@@ -206,9 +206,9 @@ window.EW_GRADES = [
         dir: "files/grade4/english-world/",
         zip: { file: "Grade4-English-World-Units-1-3-PDF.zip", size: "1.8 MB" },
         models: [
-          { n: 1, title: "الوحدة 1", file: "Grade4-English-World-Unit-1.pdf", cover: "grade4-english-world-unit-1", size: "635 KB", pages: 7, tag: "School clubs" },
-          { n: 2, title: "الوحدة 2", file: "Grade4-English-World-Unit-2.pdf", cover: "grade4-english-world-unit-2", size: "635 KB", pages: 7, tag: "In the theatre" },
-          { n: 3, title: "الوحدة 3", file: "Grade4-English-World-Unit-3.pdf", cover: "grade4-english-world-unit-3", size: "635 KB", pages: 7, tag: "Water birds" }
+          { n: 1, title: "الوحدة 1", file: "Grade4-English-World-Unit-1.pdf", cover: "grade4-english-world-unit-1", size: "625 KB", pages: 7, tag: "School clubs" },
+          { n: 2, title: "الوحدة 2", file: "Grade4-English-World-Unit-2.pdf", cover: "grade4-english-world-unit-2", size: "630 KB", pages: 7, tag: "In the theatre" },
+          { n: 3, title: "الوحدة 3", file: "Grade4-English-World-Unit-3.pdf", cover: "grade4-english-world-unit-3", size: "630 KB", pages: 8, tag: "Water birds" }
         ]
       }
     ]
@@ -229,8 +229,8 @@ window.EW_GRADES = [
         zip: { file: "Grade5-English-World-Units-1-3-PDF.zip", size: "1.8 MB" },
         models: [
           { n: 1, title: "الوحدة 1", file: "Grade5-English-World-Unit-1.pdf", cover: "grade5-english-world-unit-1", size: "635 KB", pages: 7, tag: "A journey to adventure" },
-          { n: 2, title: "الوحدة 2", file: "Grade5-English-World-Unit-2.pdf", cover: "grade5-english-world-unit-2", size: "635 KB", pages: 7, tag: "In the mountains" },
-          { n: 3, title: "الوحدة 3", file: "Grade5-English-World-Unit-3.pdf", cover: "grade5-english-world-unit-3", size: "640 KB", pages: 8, tag: "Tunnels and bridges" }
+          { n: 2, title: "الوحدة 2", file: "Grade5-English-World-Unit-2.pdf", cover: "grade5-english-world-unit-2", size: "630 KB", pages: 7, tag: "In the mountains" },
+          { n: 3, title: "الوحدة 3", file: "Grade5-English-World-Unit-3.pdf", cover: "grade5-english-world-unit-3", size: "630 KB", pages: 7, tag: "Tunnels and bridges" }
         ]
       }
     ]
@@ -250,9 +250,9 @@ window.EW_GRADES = [
         dir: "files/grade6/english-world/",
         zip: { file: "Grade6-English-World-Units-1-3-PDF.zip", size: "1.8 MB" },
         models: [
-          { n: 1, title: "الوحدة 1", file: "Grade6-English-World-Unit-1.pdf", cover: "grade6-english-world-unit-1", size: "640 KB", pages: 9, tag: "Heat in the Earth" },
-          { n: 2, title: "الوحدة 2", file: "Grade6-English-World-Unit-2.pdf", cover: "grade6-english-world-unit-2", size: "635 KB", pages: 8, tag: "Energy from nature" },
-          { n: 3, title: "الوحدة 3", file: "Grade6-English-World-Unit-3.pdf", cover: "grade6-english-world-unit-3", size: "640 KB", pages: 9, tag: "What is going to happen next?" }
+          { n: 1, title: "الوحدة 1", file: "Grade6-English-World-Unit-1.pdf", cover: "grade6-english-world-unit-1", size: "630 KB", pages: 8, tag: "Heat in the Earth" },
+          { n: 2, title: "الوحدة 2", file: "Grade6-English-World-Unit-2.pdf", cover: "grade6-english-world-unit-2", size: "630 KB", pages: 8, tag: "Energy from nature" },
+          { n: 3, title: "الوحدة 3", file: "Grade6-English-World-Unit-3.pdf", cover: "grade6-english-world-unit-3", size: "635 KB", pages: 7, tag: "What is going to happen next?" }
         ]
       }
     ]
@@ -270,11 +270,11 @@ window.EW_GRADES = [
         term: "نموذج شامل لكل وحدة من 30 علامة: قراءة، معاني، إملاء، قواعد وكتابة",
         units: "الوحدات من 1 إلى 3",
         dir: "files/grade7/english-world/",
-        zip: { file: "Grade7-English-World-Units-1-3-PDF.zip", size: "1.9 MB" },
+        zip: { file: "Grade7-English-World-Units-1-3-PDF.zip", size: "1.8 MB" },
         models: [
-          { n: 1, title: "الوحدة 1", file: "Grade7-English-World-Unit-1.pdf", cover: "grade7-english-world-unit-1", size: "650 KB", pages: 9, tag: "The portrait project" },
-          { n: 2, title: "الوحدة 2", file: "Grade7-English-World-Unit-2.pdf", cover: "grade7-english-world-unit-2", size: "650 KB", pages: 9, tag: "The man at the fountain" },
-          { n: 3, title: "الوحدة 3", file: "Grade7-English-World-Unit-3.pdf", cover: "grade7-english-world-unit-3", size: "655 KB", pages: 9, tag: "Endangered animals" }
+          { n: 1, title: "الوحدة 1", file: "Grade7-English-World-Unit-1.pdf", cover: "grade7-english-world-unit-1", size: "640 KB", pages: 8, tag: "The portrait project" },
+          { n: 2, title: "الوحدة 2", file: "Grade7-English-World-Unit-2.pdf", cover: "grade7-english-world-unit-2", size: "635 KB", pages: 8, tag: "The man at the fountain" },
+          { n: 3, title: "الوحدة 3", file: "Grade7-English-World-Unit-3.pdf", cover: "grade7-english-world-unit-3", size: "635 KB", pages: 8, tag: "Endangered animals" }
         ]
       }
     ]
@@ -294,9 +294,9 @@ window.EW_GRADES = [
         dir: "files/grade8/english-world/",
         zip: { file: "Grade8-English-World-Units-1-3-PDF.zip", size: "1.8 MB" },
         models: [
-          { n: 1, title: "الوحدة 1", file: "Grade8-English-World-Unit-1.pdf", cover: "grade8-english-world-unit-1", size: "650 KB", pages: 10, tag: "A website project" },
-          { n: 2, title: "الوحدة 2", file: "Grade8-English-World-Unit-2.pdf", cover: "grade8-english-world-unit-2", size: "650 KB", pages: 10, tag: "We love New York" },
-          { n: 3, title: "الوحدة 3", file: "Grade8-English-World-Unit-3.pdf", cover: "grade8-english-world-unit-3", size: "655 KB", pages: 10, tag: "Different places" }
+          { n: 1, title: "الوحدة 1", file: "Grade8-English-World-Unit-1.pdf", cover: "grade8-english-world-unit-1", size: "640 KB", pages: 9, tag: "A website project" },
+          { n: 2, title: "الوحدة 2", file: "Grade8-English-World-Unit-2.pdf", cover: "grade8-english-world-unit-2", size: "640 KB", pages: 9, tag: "We love New York" },
+          { n: 3, title: "الوحدة 3", file: "Grade8-English-World-Unit-3.pdf", cover: "grade8-english-world-unit-3", size: "645 KB", pages: 9, tag: "Different places" }
         ]
       }
     ]
@@ -314,11 +314,11 @@ window.EW_GRADES = [
         term: "نموذج شامل لكل وحدة من 60 علامة: قراءة، معاني، إملاء، قواعد وكتابة",
         units: "الوحدات من 1 إلى 3",
         dir: "files/grade9/english-world/",
-        zip: { file: "Grade9-English-World-Units-1-3-PDF.zip", size: "1.9 MB" },
+        zip: { file: "Grade9-English-World-Units-1-3-PDF.zip", size: "1.8 MB" },
         models: [
-          { n: 1, title: "الوحدة 1", file: "Grade9-English-World-Unit-1.pdf", cover: "grade9-english-world-unit-1", size: "655 KB", pages: 10, tag: "An international school" },
-          { n: 2, title: "الوحدة 2", file: "Grade9-English-World-Unit-2.pdf", cover: "grade9-english-world-unit-2", size: "660 KB", pages: 11, tag: "Music" },
-          { n: 3, title: "الوحدة 3", file: "Grade9-English-World-Unit-3.pdf", cover: "grade9-english-world-unit-3", size: "655 KB", pages: 10, tag: "It's a mystery ..." }
+          { n: 1, title: "الوحدة 1", file: "Grade9-English-World-Unit-1.pdf", cover: "grade9-english-world-unit-1", size: "645 KB", pages: 9, tag: "An international school" },
+          { n: 2, title: "الوحدة 2", file: "Grade9-English-World-Unit-2.pdf", cover: "grade9-english-world-unit-2", size: "650 KB", pages: 10, tag: "Music" },
+          { n: 3, title: "الوحدة 3", file: "Grade9-English-World-Unit-3.pdf", cover: "grade9-english-world-unit-3", size: "645 KB", pages: 9, tag: "It's a mystery ..." }
         ]
       }
     ]
@@ -336,11 +336,11 @@ window.EW_GRADES = [
         term: "نموذج شامل لكل وحدة: قراءة، معاني، إملاء، قواعد وكتابة",
         units: "الوحدات من 1 إلى 3",
         dir: "files/grade10/english-world/",
-        zip: { file: "Grade10-English-World-Units-1-3-PDF.zip", size: "1.9 MB" },
+        zip: { file: "Grade10-English-World-Units-1-3-PDF.zip", size: "1.8 MB" },
         models: [
-          { n: 1, title: "الوحدة 1", file: "Grade10-English-World-Unit-1.pdf", cover: "grade10-english-world-unit-1", size: "650 KB", pages: 9, tag: "It's headline news!" },
-          { n: 2, title: "الوحدة 2", file: "Grade10-English-World-Unit-2.pdf", cover: "grade10-english-world-unit-2", size: "650 KB", pages: 9, tag: "I am writing to say ..." },
-          { n: 3, title: "الوحدة 3", file: "Grade10-English-World-Unit-3.pdf", cover: "grade10-english-world-unit-3", size: "655 KB", pages: 11, tag: "This house believes ..." }
+          { n: 1, title: "الوحدة 1", file: "Grade10-English-World-Unit-1.pdf", cover: "grade10-english-world-unit-1", size: "645 KB", pages: 9, tag: "It's headline news!" },
+          { n: 2, title: "الوحدة 2", file: "Grade10-English-World-Unit-2.pdf", cover: "grade10-english-world-unit-2", size: "645 KB", pages: 9, tag: "I am writing to say ..." },
+          { n: 3, title: "الوحدة 3", file: "Grade10-English-World-Unit-3.pdf", cover: "grade10-english-world-unit-3", size: "645 KB", pages: 9, tag: "This house believes ..." }
         ]
       }
     ]
