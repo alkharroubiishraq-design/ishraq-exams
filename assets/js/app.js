@@ -64,38 +64,37 @@
     );
   }
 
-  /* ---------- curriculum page: every grade with its models ---------- */
-  function gradeSection(g, i) {
+  /* ---------- curriculum page: one card per grade, each grade has its own page ---------- */
+  function gradeHref(key, g) {
+    return key === "ew" ? "english-world/grade" + g.num + "/" : g.id + "/";
+  }
+
+  function countText(n) {
+    return n + (n >= 3 && n <= 10 ? " نماذج" : " نموذج");
+  }
+
+  function gradePick(key, g, i) {
     var tone = ["pink", "teal", "purple"][i % 3];
-    var cols = g.collections || [];
-    var one = cols.length === 1 ? cols[0] : null;
-    var zip = one && one.zip
-      ? '<a class="btn btn-navy" href="' + one.dir + one.zip.file + '" download>تحميل كل النماذج (ZIP · ' + esc(one.zip.size) + ")</a>"
-      : "";
-    var sub = one ? esc(one.title) + " · " + esc(one.term) + (one.units ? " · " + esc(one.units) : "") : esc(g.desc || "");
-    var body;
-    if (!cols.length) {
-      var k, pills = "";
-      for (k = 1; k <= (g.soon || 3); k++) pills += "<span>الوحدة " + k + "</span>";
-      body = '<div class="soon-row">' + pills + "<b>قريبًا</b></div>";
-    } else if (one) {
-      body = '<div class="grid">' + one.models.map(function (m) { return card(one, m); }).join("") + "</div>";
-    } else {
-      body = cols.map(function (c) {
-        return '<h3 class="col-sub">' + esc(c.title) + "</h3>" +
-          '<div class="grid">' + c.models.map(function (m) { return card(c, m); }).join("") + "</div>";
-      }).join("");
+    var n = modelCount(g);
+    var lvl = g.level ? '<span class="chip chip-purple" dir="ltr">' + esc(g.level) + "</span>" : "";
+    if (!n) {
+      return (
+        '<div class="grade-card soon">' +
+          '<span class="grade-num">' + esc(g.num) + "</span>" +
+          "<div><h3>" + esc(g.name) + "</h3><p>النماذج قيد الإعداد وتُضاف قريبًا.</p></div>" +
+        "</div>"
+      );
     }
     return (
-      '<section class="collection grade-block tone-' + tone + (cols.length ? "" : " is-soon") + '" id="' + g.id + '">' +
-        '<div class="col-head">' +
-          '<div class="gb-title"><span class="grade-num">' + esc(g.num) + "</span><div>" +
-            (g.level ? '<div class="chips"><span class="chip chip-purple" dir="ltr">' + esc(g.level) + "</span></div>" : "") +
-            "<h2>" + esc(g.name) + "</h2>" +
-            '<p class="sub">' + (cols.length ? sub : "النماذج قيد الإعداد وتُضاف قريبًا.") + "</p>" +
-          "</div></div>" + zip +
-        "</div>" + body +
-      "</section>"
+      '<a class="grade-card tone-' + tone + '" href="' + gradeHref(key, g) + '">' +
+        '<span class="grade-num">' + esc(g.num) + "</span>" +
+        "<div>" +
+          "<h3>" + esc(g.name) + "</h3>" +
+          "<p>" + (key === "ew" ? "نموذج شامل لكل وحدة" : "نماذج منتصف الفصل الأول") + "</p>" +
+          '<div class="chips">' + lvl + '<span class="chip chip-teal">' + countText(n) + "</span></div>" +
+        "</div>" +
+        '<span class="go" aria-hidden="true">←</span>' +
+      "</a>"
     );
   }
 
@@ -106,15 +105,12 @@
     document.getElementById("grade-name").textContent = cur.name;
     document.getElementById("grade-crumb").textContent = cur.name;
     document.getElementById("grade-desc").textContent = cur.desc;
-    var jump = document.getElementById("filters");
-    jump.className = "filters jump";
-    jump.removeAttribute("role");
-    jump.innerHTML = cur.grades.map(function (g) {
-      return '<a href="#' + g.id + '"' + (modelCount(g) ? ' class="ready"' : "") + ">" + esc(g.name) + "</a>";
-    }).join("");
-    listC.innerHTML = cur.grades.map(gradeSection).join("");
+    document.getElementById("filters").hidden = true;
+    listC.innerHTML = '<div class="grades">' +
+      cur.grades.map(function (g, i) { return gradePick(pageCur, g, i); }).join("") + "</div>";
   } else if (pageGrade) {
-    var g = grades.filter(function (x) { return x.id === pageGrade; })[0];
+    var all = grades.concat(window.EW_GRADES || []);
+    var g = all.filter(function (x) { return x.id === pageGrade; })[0];
     var listEl = document.getElementById("collections");
     if (!g) {
       listEl.innerHTML = '<p class="empty">ما في نماذج لهذا الصف حاليًا. <a href="./">ارجع للصفحة الرئيسية</a></p>';
@@ -122,8 +118,8 @@
       document.title = g.name + " | نماذج امتحانات المعلمة إشراق الخروبي";
       document.getElementById("grade-name").textContent = g.name;
       document.getElementById("grade-crumb").textContent = g.name;
-      document.getElementById("grade-desc").textContent = g.desc;
-      listEl.innerHTML = g.collections.map(section).join("");
+      document.getElementById("grade-desc").textContent = g.desc || (g.level ? g.level + " · نموذج شامل لكل وحدة مع الإجابات" : "");
+      listEl.innerHTML = (g.collections || []).map(section).join("") || '<p class="empty">النماذج قيد الإعداد وتُضاف قريبًا.</p>';
 
       var subs = subjects(g);
       var filtersEl = document.getElementById("filters");
