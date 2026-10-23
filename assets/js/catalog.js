@@ -204,20 +204,41 @@ window.EW_GRADES = [
         id: "ew7-units",
         subject: "English World 7",
         title: "نماذج الوحدات",
-        term: "نموذج شامل لكل وحدة: قراءة، معاني، إملاء، قواعد وكتابة",
+        term: "نموذج شامل لكل وحدة من 30 علامة: قراءة، معاني، إملاء، قواعد وكتابة",
         units: "الوحدات من 1 إلى 3",
         dir: "files/grade7/english-world/",
         zip: { file: "Grade7-English-World-Units-1-3-PDF.zip", size: "1.9 MB" },
         models: [
-          { n: 1, title: "الوحدة 1", file: "Grade7-English-World-Unit-1.pdf", cover: "grade7-english-world-unit-1", size: "650 KB", pages: 10, tag: "The portrait project" },
-          { n: 2, title: "الوحدة 2", file: "Grade7-English-World-Unit-2.pdf", cover: "grade7-english-world-unit-2", size: "650 KB", pages: 10, tag: "The man at the fountain" },
-          { n: 3, title: "الوحدة 3", file: "Grade7-English-World-Unit-3.pdf", cover: "grade7-english-world-unit-3", size: "655 KB", pages: 10, tag: "Endangered animals" }
+          { n: 1, title: "الوحدة 1", file: "Grade7-English-World-Unit-1.pdf", cover: "grade7-english-world-unit-1", size: "650 KB", pages: 9, tag: "The portrait project" },
+          { n: 2, title: "الوحدة 2", file: "Grade7-English-World-Unit-2.pdf", cover: "grade7-english-world-unit-2", size: "650 KB", pages: 9, tag: "The man at the fountain" },
+          { n: 3, title: "الوحدة 3", file: "Grade7-English-World-Unit-3.pdf", cover: "grade7-english-world-unit-3", size: "655 KB", pages: 9, tag: "Endangered animals" }
         ]
       }
     ]
   },
   { id: "ew8", name: "الصف الثامن", num: "8", level: "English World 8", soon: 3 },
-  { id: "ew9", name: "الصف التاسع", num: "9", level: "English World 9", soon: 3 },
+  {
+    id: "ew9",
+    name: "الصف التاسع",
+    num: "9",
+    level: "English World 9",
+    collections: [
+      {
+        id: "ew9-units",
+        subject: "English World 9",
+        title: "نماذج الوحدات",
+        term: "نموذج شامل لكل وحدة من 60 علامة: قراءة، معاني، إملاء، قواعد وكتابة",
+        units: "الوحدات من 1 إلى 3",
+        dir: "files/grade9/english-world/",
+        zip: { file: "Grade9-English-World-Units-1-3-PDF.zip", size: "1.9 MB" },
+        models: [
+          { n: 1, title: "الوحدة 1", file: "Grade9-English-World-Unit-1.pdf", cover: "grade9-english-world-unit-1", size: "655 KB", pages: 10, tag: "An international school" },
+          { n: 2, title: "الوحدة 2", file: "Grade9-English-World-Unit-2.pdf", cover: "grade9-english-world-unit-2", size: "660 KB", pages: 11, tag: "Music" },
+          { n: 3, title: "الوحدة 3", file: "Grade9-English-World-Unit-3.pdf", cover: "grade9-english-world-unit-3", size: "655 KB", pages: 10, tag: "It's a mystery ..." }
+        ]
+      }
+    ]
+  },
   {
     id: "ew10",
     name: "الصف العاشر",
