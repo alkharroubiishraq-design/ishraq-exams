@@ -191,7 +191,28 @@ window.GRADES = [
   الصف بدون نماذج بعد يظهر "قريبًا" (soon = عدد الوحدات المنتظرة).
 */
 window.EW_GRADES = [
-  { id: "ew4", name: "الصف الرابع", num: "4", level: "English World 4", soon: 3 },
+  {
+    id: "ew4",
+    name: "الصف الرابع",
+    num: "4",
+    level: "English World 4",
+    collections: [
+      {
+        id: "ew4-units",
+        subject: "English World 4",
+        title: "نماذج الوحدات",
+        term: "نموذج شامل لكل وحدة من 30 علامة: قراءة، معاني، إملاء، قواعد وكتابة",
+        units: "الوحدات من 1 إلى 3",
+        dir: "files/grade4/english-world/",
+        zip: { file: "Grade4-English-World-Units-1-3-PDF.zip", size: "1.8 MB" },
+        models: [
+          { n: 1, title: "الوحدة 1", file: "Grade4-English-World-Unit-1.pdf", cover: "grade4-english-world-unit-1", size: "635 KB", pages: 7, tag: "School clubs" },
+          { n: 2, title: "الوحدة 2", file: "Grade4-English-World-Unit-2.pdf", cover: "grade4-english-world-unit-2", size: "635 KB", pages: 7, tag: "In the theatre" },
+          { n: 3, title: "الوحدة 3", file: "Grade4-English-World-Unit-3.pdf", cover: "grade4-english-world-unit-3", size: "635 KB", pages: 7, tag: "Water birds" }
+        ]
+      }
+    ]
+  },
   {
     id: "ew5",
     name: "الصف الخامس",
